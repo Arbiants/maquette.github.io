@@ -1,5 +1,5 @@
 *, ::before, ::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
@@ -10,6 +10,8 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
     min-width:650px;
+    display: block;
+    
 }
 .container-grid{
     display: grid;
