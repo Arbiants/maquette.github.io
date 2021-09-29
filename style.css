@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     margin: 0 auto;
     overflow-x: hidden;
-    min-width:560px
+    min-width:560px;
 }
 .container-grid{
     display: grid;
