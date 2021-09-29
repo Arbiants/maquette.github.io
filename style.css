@@ -285,9 +285,6 @@ main {
     .container-grid{
         min-width: 100%;
     }
-    .list-container{
-        display: none;
-    }
     .networks{
         display: none;
     }
@@ -306,7 +303,11 @@ main {
 
 }
 
-
+@media screen and (max-width: 1000px){
+    .list-container{
+        display: none;
+    }
+}
 @media screen and (max-width: 757px){
     .content-learn{
        flex-direction: column-reverse;
