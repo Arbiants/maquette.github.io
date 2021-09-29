@@ -9,7 +9,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     margin: 0 auto;
     overflow-x: hidden;
-    min-width:650px;
+    min-width:100%;
     display: block;
     
 }
