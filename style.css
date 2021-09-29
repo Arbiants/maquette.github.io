@@ -234,7 +234,7 @@ main {
 }
 
 
-@media screen and (max-width: 1200px) and (min-width: 600px){
+@media screen and (max-width: 1200px) {
     .content-learn{
        flex-direction: column-reverse;
     }
@@ -304,16 +304,6 @@ main {
 
 }
 @media screen and (max-width: 600px){
-    #bg-roadmap{
-        display: flex;
-        margin-left: -270px;
-    } 
-    .main-roadmap{
-        justify-content:left;
-    }
-    .content-roadmap{
-        margin-left: 550px;
-    }
     .logo {
         width: 70%;
     }
