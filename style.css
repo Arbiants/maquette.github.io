@@ -234,7 +234,7 @@ main {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px)  and (min-width: 600px){
     .content-learn{
        flex-direction: column-reverse;
     }
@@ -304,6 +304,60 @@ main {
 
 }
 @media screen and (max-width: 600px){
+        .content-learn{
+       flex-direction: column-reverse;
+    }
+    #container-img-main{
+    margin: 20px;
+    }
+    #img-main-learn{
+    width: 80%;
+    min-width: 350px;
+    }
+    #text{
+        width: 50%;
+        min-width: 350px;
+        margin: 20px 0;
+    }
+    #text >h3 {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .main-mint {
+        min-height: 1000px;
+    }
+    .announce {
+    font-size: 30px;
+    }
+    #mint{
+    margin-top: 80%;
+    }
+    #bg-roadmap{
+        display: flex;
+        margin-left: -500px;
+    } 
+    .main-roadmap{
+        justify-content:left;
+    }
+    
+    .content-roadmap{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 20px;
+    }
+    .content-roadmap >h3{
+        padding-bottom: 50px;
+        padding-top: 150px;
+    }
+    .container-grid{
+        min-width: 100%;
+    }
+    .list-container{
+        display: none;
+    }
+    .networks{
+        display: none;
+    }
     .logo {
         width: 70%;
     }
