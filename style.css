@@ -312,7 +312,7 @@ main {
        flex-direction: column-reverse;
     }
     #container-img-main{
-    margin: 20px;
+    margin: unset;
     }
     #img-main-learn{
     width: 80%;
