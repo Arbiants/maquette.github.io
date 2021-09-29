@@ -277,7 +277,7 @@ main {
         padding-top: 150px;
     }
     .container-grid{
-    min-width: 530px;
+    min-width: 100%;
     }
  }
  @media screen and (max-width: 2100px) and (min-width: 1200px){
