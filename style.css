@@ -216,7 +216,6 @@ main {
     width: 100%;
     background-color: #1F274C;
     justify-content: center;
-    height: 1500px;
 }
 #bg-roadmap{
     display: block;
@@ -224,7 +223,6 @@ main {
     position: absolute;
 }
 .content-roadmap{
-    position: absolute;
     margin-left: 300px;
     margin-right: 200px;
     max-width: 1200px;
