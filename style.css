@@ -91,6 +91,7 @@ main {
 .connect{
     width: 350px;
     position: absolute;
+    display: flex;
 }
 #mint{
     background-color: #ebb30d;
