@@ -332,10 +332,11 @@ main {
         min-height: 1000px;
     }
     .announce {
-    font-size: 30px;
+        font-size: 25px;
     }
     #mint{
-    margin-top: 80%;
+        margin-top: 80%;
+        font-size: 35px;
     }
     #bg-roadmap{
         display: flex;
@@ -351,8 +352,8 @@ main {
         margin-right: 20px;
     }
     .content-roadmap >h3{
-        padding-bottom: 50px;
-        padding-top: 150px;
+        padding-bottom: 40px;
+        padding-top: 110px;
     }
     .container-grid{
         min-width: 100%;
@@ -374,6 +375,12 @@ main {
     }
     .Logo{
         min-width: unset;
+    }
+    #see-ants{
+        width: 180px;
+    }
+    #market{
+        width: 180px;
     }
 
 }
