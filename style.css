@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
 }
+html,body {min-width:560px;}
 body {
     background-color: #EADCD8; 
     font-family: 'Roboto Mono', monospace;
     margin: 0 auto;
     overflow-x: hidden;
+    min-width:560px
 }
 .container-grid{
     display: grid;
