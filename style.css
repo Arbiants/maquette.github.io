@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
     min-width:100%;
-    display: block;
+    display: content;
     
 }
 .container-grid{
