@@ -86,7 +86,7 @@ main {
     place-content: center;
     grid-column: auto;
     grid-row: span 1;
-    width: 100%;
+    width: 100vh;
 }
 .connect{
     width: 350px;
@@ -257,6 +257,8 @@ main {
         text-align: center;
     }
     .main-mint {
+        height: 80vw;
+        width: unset;
     }
     .announce {
     font-size: 30px;
@@ -327,7 +329,8 @@ main {
         text-align: center;
     }
     .main-mint {
-
+        height: 130vw;
+        width: unset;
     }
     .announce {
         font-size: 25px;
@@ -401,7 +404,8 @@ main {
             font-size:3.8vw;
         }
         .main-mint {
-    
+            height: 150vw;
+            width: unset;
         }
         .announce {
             font-size: 6vw;
