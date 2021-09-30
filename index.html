@@ -18,7 +18,26 @@
     <script src="jquery.toast.min.js" type="text/javascript"></script>
     <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js" type="text/javascript"></script>
     <script type="module" src="app.js" type="text/javascript"></script>-->
-  </head>
+ <script>
+    function Close(){
+        if (document.getElementsByClassName("list-container")[0].style.width = "50vw"){
+            document.getElementsByClassName("list-container")[0].style.transition = "0.5s";
+            document.getElementsByClassName("list-container")[0].style.width = "0vw";
+            document.getElementById("navbar-toggle-cross").style.display= "none";
+            document.getElementById("navbar-toggle-ham").style.display= "unset";
+        }
+    }
+    function Open(){
+        if (document.getElementsByClassName("list-container")[0].style.width != "50vw"){
+            document.getElementsByClassName("list-container")[0].style.width = "50vw";
+            document.getElementById("navbar-toggle-ham").style.display= "none";
+            document.getElementById("navbar-toggle-cross").style.display= "unset";
+            setTimeout (()=> {document.getElementsByClassName("list-container")[0].style.transition = "unset"},500);
+        }
+    }
+ </script> 
+
+</head>
   <body>
         <div class="container-grid">
          <img id="bg-main-mint" src="maquette.github.io/bg-main-mint.svg">
@@ -26,8 +45,10 @@
                 <div class="Logo">
                     <img style="width:100%"src="maquette.github.io/Arbiants_logo.png">
                 </div>
-
+                <div id="navbar-toggle-ham" onclick="Open()">☰</div>
+                <div id="navbar-toggle-cross" onclick="Close()">x</div>
                 <div class="list-container">
+
                     <nav>
                         <ul class="list-topnav">
                             <li><a href="#">Learn more</a></li>
@@ -35,10 +56,11 @@
                             <li><a href="#">FAQ</a></li>
                         </ul>
                     </nav>
-                </div>
-                <div class="networks">
-                    <a href="https://twitter.com/Arbiants" target="_blank"><img style="padding-right: 15px;" src="maquette.github.io/twitter.svg"></a>
-                    <a href="https://discord.gg/8bvQjzSw" target="_blank"><img src="maquette.github.io/discord.svg"></a>
+                
+                    <div class="networks">
+                        <a href="https://twitter.com/Arbiants" target="_blank"><object data="maquette.github.io/maquette.github.io/twitter.svg"></object></a>
+                        <a href="https://discord.gg/8bvQjzSw" target="_blank"><object data="maquette.github.io/discord.svg"></object></a>
+                    </div>
                 </div>
             </header>
 
@@ -78,7 +100,7 @@
                 </div>
                 
                 <div class="main-roadmap">
-                  <img id="bg-roadmap" src="maquette.github.io/bg-roadmap.png">
+                  <img id="bg-roadmap" src="maquette.github.io/bg-roadmap.svg">
                     <div class="content-roadmap">
                         <h3>Arbiants start digging up Arbitrum</h3>
                         <p>Minting is live and arbiants are starting to be seen in the soils of Arbitrum...</p>
