@@ -535,7 +535,7 @@ main {
         padding: 5px;
     }
     #bg-roadmap{
-        margin-left: -170px;
+        margin-left: -100vw;
         height: 320vw;
     } 
     .main-roadmap{
