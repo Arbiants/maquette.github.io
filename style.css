@@ -484,7 +484,6 @@ main {
         height: 10.5vw;
         line-height:9.5vw;
         width: 10.5vw;
-        display: unset;
     }
     .list-topnav >li >a{
     font-size: 3vw;
@@ -535,7 +534,6 @@ main {
         padding: 5px;
     }
     #bg-roadmap{
-        display: none;
         margin-left: -500px;
     } 
     .main-roadmap{
