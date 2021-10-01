@@ -670,8 +670,8 @@ main {
         min-width: 80vw;
     }
     #left-learn{
-        width: 50%;
-        margin: 20px 0;
+        width: unset;
+        margin: 15px;
     }
     #text >h3 {
         margin: 10px 0;
