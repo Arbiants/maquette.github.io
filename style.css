@@ -687,7 +687,7 @@ main {
         font-size:3.8vw;
     }
     .main-mint {
-        height: 200vw;
+        height: unset;
     }
     .announce {
         font-size: 6vw;
