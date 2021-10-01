@@ -88,6 +88,7 @@ main {
     grid-column: auto;
     grid-row: span 1;
     width: 110vh;
+    height: 900px;
 }
 .connect{
     width: 350px;
@@ -146,7 +147,7 @@ main {
 }
 #text{
     width: 50%;
-    margin: 20px;
+    margin: 50px 20px;
 }
 #container-img-main{
     display: flex;
@@ -157,8 +158,9 @@ main {
     width: 80%;
     margin: 20px;
 }
-#text >h3 {
+#text >h1 {
     margin: 10px 0;
+    text-align: center;
 }
 #test-anim{
     max-width: 1500px;
@@ -236,6 +238,11 @@ main {
 .content-roadmap >h3{
     padding-bottom: 50px;
     padding-top: 150px;
+}
+.content-roadmap >h1{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 100px;
 }
 #navbar-toggle-cross{
     display: none;
@@ -519,6 +526,11 @@ main {
         text-align: center;
         font-size:4.5vw;
     }
+    #text >h1 {
+        margin: 10px 0;
+        text-align: center;
+        font-size:7vw;
+    }
     #text >p {
         font-size:3.8vw;
     }
@@ -580,6 +592,9 @@ main {
     .announce {
     padding: 5vw 0;
     
+    }
+    .content-roadmap >h1{
+        font-size: 15vw;
     }
 }
 
