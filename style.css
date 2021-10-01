@@ -87,14 +87,15 @@ main {
     place-content: center;
     grid-column: auto;
     grid-row: span 1;
-    width: 110vh;
-    height: 900px;
+    width: 100%;
+    height: 90vh;
 }
 .connect{
-    width: 350px;
-    position: absolute;
     display: flex;
-    justify-content: center;
+    margin-top: 600px;
+    justify-content: flex-end;
+    flex-direction: column;
+
 }
 #mint{
     background-color: #ebb30d;
@@ -106,11 +107,23 @@ main {
     border-radius: 50px;
     box-shadow: 0px 4px 16px rgba(0,0,0,.15);
     border: none;
-    margin-top: 150%;
     font-weight: bold;
     
 }
+
 #mint:hover{
+    background-color: black;
+    color: #ebb30d;
+
+}
+
+#mint2:hover{
+    background-color: black;
+    color: #ebb30d;
+
+}
+
+#mint3:hover{
     background-color: black;
     color: #ebb30d;
 
@@ -125,6 +138,12 @@ main {
     font-weight: bold;
     font-size: 35px;
     padding: 30px 0;
+    margin-top: auto;
+    flex-direction: column;
+}
+#count{
+    font-size: 15px;
+    margin-bottom: -10px;
 }
 #bg-main-mint{
     display: flex;
@@ -182,6 +201,21 @@ main {
     margin-top: 10%;
     
 }
+#mint3{
+    background-color: #ebb30d;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 30px;
+    width: auto;
+    border-radius: 50px;
+    box-shadow: 0px 4px 16px rgba(0,0,0,.15);
+    border: none;
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 30px;
+    
+}
 #test-anim{
     max-width: 1500px;
     width: 100%;
@@ -190,13 +224,14 @@ main {
     display: flex;
     background-color: #953256;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     font-size: 35px;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    flex-direction: column;
+    padding-top: 25px;
+    
 }
 #see-ants{
     
@@ -238,15 +273,16 @@ main {
 .main-roadmap{
     display: flex;
     width: 100%;
-    height: 111%;
     background-color: #1F274C;
     justify-content: center;
+    flex-direction: column;
 }
 #bg-roadmap{
     display: block;
     height: 1500px;
     position: absolute;
     z-index: 0;
+    align-self: center;
 }
 .content-roadmap{
     margin-left: 400px;
@@ -254,6 +290,7 @@ main {
     max-width: 1000px;
     color: white;
     z-index: 1;
+    align-self: center;
 }
 .content-roadmap >h3{
     padding-bottom: 50px;
@@ -272,6 +309,86 @@ main {
     display: none;
     
 }
+
+
+
+
+
+/*display only connected*/
+
+
+#own-count{
+    font-size: 15px;
+    text-align: center;
+}
+#address-button{
+    pointer-events: none;
+    box-shadow: inset 0 0 0.2em gray, 0px 4px 16px rgba(0,0,0,.15);
+    border: none;
+    border-radius: 50px;
+    width: fit-content;
+    align-self: center;
+    padding: 5px 10px;
+    margin: 10px 0;
+    background-color: rgb(226, 226, 226);
+    color: rgb(100, 100, 100);
+}
+#number{
+    width: 30%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    align-self: center;
+    box-shadow: 0px 4px 16px rgba(0,0,0,.15);
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+#referral{
+    margin-top: 80px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-weight: bold;
+}
+#referral-button{
+    margin: 10px;
+    width: fit-content;
+    align-self: center;
+    border-radius: 50px;
+    box-shadow: 0px 4px 16px rgba(0,0,0,.15);
+    border: none;
+    padding: 10px;
+    background-color: #EBB30D;
+    font-weight: bold;
+}
+#referral-button:hover{
+    background-color: black;
+    color: #ebb30d;
+
+}
+/*display only connected END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*window width parameters*/
+
+
+
 
 @media screen and (max-width: 1200px)  and (min-width: 757px){
     .content-learn{
@@ -293,26 +410,20 @@ main {
         margin: 10px 0;
         text-align: center;
     }
-    .main-mint {
-        width: 200%;
-    }
     .announce {
     font-size: 30px;
-    }
-    #mint{
-        margin-top: 40vw;
     }
     #bg-roadmap{
         display: flex;
         margin-left: -500px;
+        align-self: unset;
     } 
     .main-roadmap{
         justify-content:left;
-        height: 107%;
+        align-self: unset;
     }
     
     .content-roadmap{
-        margin-top: 50px;
         margin-left: 200px;
         margin-right: 20px;
     }
@@ -348,6 +459,8 @@ main {
     #bg-roadmap{
         display: flex;
         margin-left: -270px;
+        
+        align-self: unset;
     } 
     .main-roadmap{
         justify-content:left;
@@ -452,34 +565,43 @@ main {
         text-align: center;
     }
     .main-mint {
-        height: 130vw;
-        width: unset;
+        height: 180vw;
+    }
+    .connect {
+        margin-top: 65vw;
     }
     .announce {
         font-size: 25px;
     }
     #mint{
-        margin-top: 30vw;
         font-size: 35px;
+        padding: 25px;
+        width: 80%;
+        align-self: center;
     }
     #mint2{
         margin-top: 30vw;
         font-size: 4vw;
         padding: 20px;
     }
+    #mint3{
+        margin-top: unset;
+        font-size: 4vw;
+        padding: 20px;
+        z-index: 3;
+    }
     #bg-roadmap{
         display: flex;
         margin-left: -500px;
     } 
-    .main-roadmap{
-        justify-content:left;
-        height: 120%;
-    }
     
     .content-roadmap{
-        margin-top: 50px;
-        margin-left: 100px;
+        margin-top: 0px;
+        margin-left: 20px;
         margin-right: 20px;
+    }
+    .content-roadmap >h1 {
+        font-size: 70px;
     }
     .content-roadmap >h3{
         padding-bottom: 40px;
@@ -528,10 +650,15 @@ main {
     min-width: unset;
     margin: 7vw 0;
     }
+    #referral{
+        margin-top: 60px;
+    }
 
 }
 @media screen and (max-width: 420px){
-
+    .connect{
+        margin-top: 60vw;
+    }
     .content-learn{
         flex-direction: column-reverse;
     }
@@ -560,16 +687,22 @@ main {
         font-size:3.8vw;
     }
     .main-mint {
-        width: unset;
+        height: 200vw;
     }
     .announce {
         font-size: 6vw;
     }
+    #number{
+        width: 20vw;
+        font-size: 6vw;
+        padding-left: 15px;
+        margin: 4vw 0;
+    }
     #mint{
-        margin-top: 20%;
         font-size:8.5vw;
-        width: unset;
-        padding: 5px;
+        width: 60vw;
+        padding: 3vw;
+        align-self: center;
     }
     #mint2{
         margin-top: 20%;
@@ -577,14 +710,16 @@ main {
         width: unset;
         padding: 2vw;
     }
+    #mint3{
+        font-size:4vw;
+        width: unset;
+        padding: 2vw;
+        margin-top: unset;
+    }
     #bg-roadmap{
         margin-left: -100vw;
         height: 320vw;
     } 
-    .main-roadmap{
-        justify-content:left;
-        height: 100%;
-    }
         
     .content-roadmap{
         margin: 15px;
@@ -626,6 +761,29 @@ main {
     }
     .content-roadmap >h1{
         font-size: 15vw;
+    }
+    #own-count{
+        font-size: 3vw;
+    }
+    #address-button{
+        padding: 1.5vw 3vw;
+        margin: 2vw 0;
+        font-size: 3vw;
+    }
+    .secondary-buttons{
+        padding-top: 5vw;
+    }
+    #referral{
+        margin-top: 8vw;
+        font-size: 2vw;
+    }
+    #referral-button{
+        margin: 3vw;
+        padding: 2vw;
+        font-size: 4vw;
+    }
+    #count{
+    font-size: 3.5vw;
     }
 }
 
