@@ -293,8 +293,13 @@ main {
     align-self: center;
 }
 .content-roadmap >h3{
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     padding-top: 150px;
+    border-bottom: 5px solid #fff;
+    width: fit-content;
+}
+.content-roadmap >p{
+    padding-top: 40px;
 }
 .content-roadmap >h1{
     font-size: 80px;
@@ -557,8 +562,8 @@ main {
     min-width: 50vw;
     }
     #left-learn{
-        width: 50%;
-        margin: 20px 0;
+        width: unset;
+        margin: 15px;
     }
     #text >h3 {
         margin: 10px 0;
@@ -725,9 +730,10 @@ main {
         margin: 15px;
     }
     .content-roadmap >h3{
-        padding-bottom: 10vw;
+        padding-bottom: 5vw;
         padding-top: 25vw;
         font-size:4.5vw;
+        border-bottom: 1vw solid #fff;
     }
     
     .content-roadmap >p{
